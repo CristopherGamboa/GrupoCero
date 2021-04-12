@@ -1,0 +1,38 @@
+
+
+.body-bg{
+    background-color: #4D247D;
+}
+
+.nav-link{
+    font-size: x-large;
+}
+
+.carousel-caption h5{
+    font-size: xx-large;
+}
+.carousel-caption p{
+    font-size: larger;
+}
+
+.navbar ul {
+    list-style:none;
+  }
+.navbar ul li{
+    display:inline-block; 
+    padding:0 7px; 
+    position:relative;
+  }
+.navbar ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+  }
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.2);
+}
