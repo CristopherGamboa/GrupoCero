@@ -36,11 +36,19 @@
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                    <form class="d-flex navbar-right p-3">
-                        <input class="form-control" type="text" placeholder="USUARIO" />
-                        <input class="form-control" type="password" placeholder="CONTRASEÑA" />
-                        <button class="btn" type="submit">LOGIN</button>
-                    </form>
+                    <div class="row">
+                        <form class="d-flex navbar-right px-3 pt-5" onsubmit="validar()">
+                            <input class="form-control" type="text" placeholder="E-MAIL" id="usuario" />
+                            <input class="form-control" type="password" placeholder="CONTRASEÑA" id="clave" />
+                            <button class="btn" type="submit" id="submit">ENTRAR</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="registro.html" style="font-size: medium;">¿No tienes cuenta?
+                                    ¡Regístrate!</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,83 +66,94 @@
             <div class="col-md-1"><a href="#" style="text-decoration: none; color: black;">Técnica</a></div>
             <div class="col-md-8">
                 <div class="input-group rounded">
-                    <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search"
-                        aria-describedby="search-addon" />
+                    <input id="searchbar" type="search" class="form-control rounded" placeholder="Buscar"
+                        aria-label="Search" aria-describedby="search-addon" onkeyup="buscar_obra()" />
                     <span class="btn input-group-text border-0" id="search-addon">
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
             </div>
         </div>
+        <ol id="list" class="row">
 
-        <div class="row text-center text-lg-left">
-
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="obra.html" class="d-block mb-4 h-100">
+            <li class="obras col-lg-3 col-md-4 col-6" id="colorida">
+                <a href="colorida.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/galeria.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="contrastes">
+                <a href="contrastes.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra1.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="altamar">
+                <a href="altamar.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra2.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="trenza">
+                <a href="trenza.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra3.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="onírico onirico">
+                <a href="onirico.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra4.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="salúd salud">
+                <a href="salud.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra5.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="rango">
+                <a href="rango.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra6.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="infancia">
+                <a href="infancia.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra7.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="amada">
+                <a href="amada.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra8.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="absorción absorcion">
+                <a href="absorcion.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra9.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="antípoda antipoda">
+                <a href="antipoda.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra10.jpg" alt="">
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
+            </li>
+
+            <li class="obras col-lg-3 col-md-4 col-6" id="viviendo">
+                <a href="viviendo.html" class="d-block mb-4 h-100">
                     <img class="img-fluid img-thumbnail" src="img/obra11.jpg" alt="">
                 </a>
-            </div>
-        </div>
+            </li>
+        </ol>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>

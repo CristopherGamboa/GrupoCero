@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-
 </head>
 
 <body class="body-bg">
@@ -28,10 +27,10 @@
                             <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                            <a class="nav-link active" href="galeria.html">GALERIA</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -54,51 +53,66 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid bg-white my-5 pb-5">
-        <h1 class="font-weight-light text-center text-lg-left mb-0">NOSOTROS</h1>
-        <hr class="mt-2 mb-5">
-        <section class="team-section text-center">
-            <div class="row text-center">
-                <div class="col-md-6 mb-md-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/cristopher.jpg" class="rounded z-depth-1-half w-50" alt="Sample avatar">
+    <div class="container-fluid bg-white my-5 ">
+        <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">OBRA</h1>
+        <hr class="mt-2 mb-2">
+
+        <div class="row px-5 py-5">
+            <div class="col">
+                <div id="petPhotoGallery" class="carousel card-contact" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid rounded" alt="" src="img/obra8.jpg" />
+                        </div>
                     </div>
-                    <h4 class="font-weight-bold dark-grey-text my-4">Cristopher Gamboa</h4>
-                    <h6 class="text-uppercase grey-text mb-3"><strong>Director Ejecutivo</strong></h6>
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email bg-dark text-white">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git bg-dark text-white">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw bg-dark text-white">
-                        <i class="fab fa-twitter"></i>
-                    </a>
                 </div>
+            </div>
+            <div class="col">
+                <div class="rounded bg-white p-4 card-contact">
+                    <div class="row">
+                        <span class="h2 pet-name col-sm-6">Amada</span>
 
-                <div class="col-md-6 mb-md-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/felipe.jpg" class="rounded z-depth-1-half w-50" alt="Sample avatar">
+                        <div class="h5 text-right col-sm-6">
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#userLoginModal"
+                                href="#">¡Adquiere una copia!</a>
+                        </div>
                     </div>
-                    <h4 class="font-weight-bold dark-grey-text my-4">Felipe Guerrero</h4>
-                    <h6 class="text-uppercase grey-text mb-3"><strong>Gestor de Artistas</strong></h6>
-
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email bg-dark text-white">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb bg-dark text-white">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git bg-dark text-white">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <div class="col-mg-12">
+                        <p class="lead">Julio Armiño</p>
+                    </div>
+                    <div class="col-mg-12">
+                        <p class="lead font-italic">San Antonio, Chile</p>
+                    </div>
+                    <div class="col-mg-12">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Año</th>
+                                    <td>1989</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Técnica</th>
+                                    <td>Lápiz</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Precio</th>
+                                    <td>$5.500.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Descripción</th>
+                                    <td>La pérdida de la amada.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Historia</th>
+                                    <td>Se origina en los sentimientos de desamor.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
             </div>
 
-        </section>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
