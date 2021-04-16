@@ -4,9 +4,11 @@ function validar() {
 
     if (usuario == "contacto@grupocero.cl" && clave == "grupocero") {
         alert("E-mail y contraseña válidos. ¡Bienvenido!")
+        location.href = 'index.html';
     } else {
-        alert("¡Credenciales erróneas!")
+        alert("¡Credenciales erróneas!");
     }
+    return false;
 }
 
 function buscar_obra() {
